@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #333;
+}
+
+.sidebar h2 {
+    color: #ffffff;
+}
+
+.sidebar form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar label, .sidebar input, .sidebar textarea, .sidebar button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.sidebar input, .sidebar textarea {
+    background-color: #f7f7f7;
+}
+
+.sidebar button {
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #666;
+}
+
+main {
+    flex: 3;
+    padding: 20px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This pushes projects to the bottom */
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #444;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttons a:hover {
+    background-color: #666;
+}
+
+h1, h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.inner-box {
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    padding: 20px;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    color: white;
+    max-width: 100%;
+}
+
+.side-box {
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    color: white;
+    max-width: 75%;
+}
+
+#projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    #projects .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #666;
+    color: white;
+    border-top: 1px solid #f0f0f0;
+} */
