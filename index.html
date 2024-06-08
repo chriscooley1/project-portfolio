@@ -3,36 +3,50 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chris Cooley's personal portfolio showcasing projects and contact information." />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
     <div class="main-container">
         <aside class="sidebar">
-            <h2 id="contact"></h2>
             <section>
-                <h2>Chris Cooley</h2>
-                <div class="side-box">
-                    <p>Web Developer</p>
+                <div class="avatar-box">
+                    <img src="ME.jpeg" alt="Avatar" class="avatar-img">
                 </div>
+                <h2>Chris Cooley</h2>
+                <p class="web-developer">Web Developer</p>
                 <div class="side-box">
-                    <label for="email">EMAIL</label>
+                    <div class="label-icon">
+                        <i class="fas fa-envelope"></i>
+                        <label for="email">EMAIL</label>
+                    </div>
                     <p>chriscooley1984@yahoo.com</p>
                 </div>
                 <div class="side-box">
-                    <label for="phone">PHONE</label>
+                    <div class="label-icon">
+                        <i class="fas fa-phone"></i>
+                        <label for="phone">PHONE</label>
+                    </div>
                     <p>(915)246-2751</p>
                 </div>
                 <div class="side-box">
-                    <label for="birthday">BIRTHDAY</label>
+                    <div class="label-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                        <label for="birthday">BIRTHDAY</label>
+                    </div>
                     <p>11/14/84</p>
                 </div>
                 <div class="side-box">
-                    <label for="location">LOCATION</label>
+                    <div class="label-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <label for="location">LOCATION</label>
+                    </div>
                     <p>Saint George, UT 84770</p>
                 </div>
             </section>
-        </aside>
+        </aside>        
 
         <main>
             <header>
@@ -57,6 +71,7 @@
                 <div class="project-grid">
                     <div class="inner-box">
                         <h3>
+                            <i class="fas fa-snowflake"></i>
                             <a href="https://github.com/chriscooley1/snowboarding-shop" target="_blank" rel="noopener">Snowboarding Shop</a>
                         </h3>
                         <p>A small FastAPI app that manages snowboards.</p>
@@ -64,6 +79,7 @@
                     
                     <div class="inner-box">
                         <h3>
+                            <i class="fas fa-paw"></i>
                             <a href="https://github.com/chriscooley1/animal-shelter" target="_blank" rel="noopener">Shelter</a>
                         </h3>
                         <p>A small FastAPI app that manages animal shelters.</p>
@@ -71,6 +87,7 @@
                     
                     <div class="inner-box">
                         <h3>
+                            <i class="fas fa-pills"></i>
                             <a href="https://github.com/chriscooley1/pharmacy-api" target="_blank" rel="noopener">Pharmacy API</a>
                         </h3>
                         <p>A small FastAPI app that manages pharmacies.</p>
@@ -78,16 +95,13 @@
 
                     <div class="inner-box">
                         <h3>
+                            <i class="fas fa-dumbbell"></i>
                             <a href="https://github.com/chriscooley1/workout-tracker" target="_blank" rel="noopener">Workout Tracker</a>
                         </h3>
                         <p>A small FastAPI app that manages workouts.</p>
                     </div>
                 </div>
             </section>
-
-            <!-- <footer>
-                <p>&copy; Copyright 2024 Cooley Productions. All rights reserved.</p>
-            </footer> -->
         </main>
     </div>
 </body>

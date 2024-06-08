@@ -1,13 +1,13 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: black;
-    color: white;
+    background-color: #121212;
+    color: #ffffff;
 }
 
 .main-container {
@@ -15,11 +15,11 @@ html, body {
     flex-wrap: wrap;
     width: 90%;
     max-width: 1200px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
-    color: white;
+    color: #e0e0e0;
 }
 
 .sidebar {
@@ -27,38 +27,69 @@ html, body {
     min-width: 300px;
     padding: 20px;
     background-color: #333;
+    text-align: center;
 }
 
 .sidebar h2 {
     color: #ffffff;
+    font-size: 1.5em;
 }
 
-.sidebar form {
+.sidebar p.web-developer {
+    background-color: #444;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #e0e0e0;
+}
+
+.avatar-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ffd700;
+}
+
+.sidebar .side-box {
     display: flex;
     flex-direction: column;
-}
-
-.sidebar label, .sidebar input, .sidebar textarea, .sidebar button {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    color: white;
-}
-
-.sidebar input, .sidebar textarea {
-    background-color: #f7f7f7;
-}
-
-.sidebar button {
+    align-items: flex-start;
+    border: 1px solid #444;
+    padding: 15px;
+    margin: 15px 0;
     background-color: #444;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: #e0e0e0;
 }
 
-.sidebar button:hover {
-    background-color: #666;
+.sidebar .side-box i {
+    font-size: 1.2em;
+    color: #ffd700;
+    margin-right: 10px;
+}
+
+.sidebar .side-box label {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .side-box .label-icon {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .side-box p {
+    margin: 0;
+    padding-left: 1.8em;
 }
 
 main {
@@ -67,7 +98,7 @@ main {
     background-color: #222;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* This pushes projects to the bottom */
+    justify-content: space-between;
 }
 
 .buttons {
@@ -78,44 +109,48 @@ main {
 
 .buttons a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     background-color: #444;
     padding: 10px 20px;
     margin: 0 10px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .buttons a:hover {
     background-color: #666;
+    transform: scale(1.05);
 }
 
 h1, h2 {
     margin-top: 0;
-    color: white;
+    color: #ffffff;
 }
 
 .inner-box {
     text-align: center;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #444;
     padding: 20px;
-    background-color: #444;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
-    color: white;
-    max-width: 100%;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: #e0e0e0;
+    transition: transform 0.3s;
 }
 
-.side-box {
-    text-align: center;
-    border: 1px solid #f0f0f0;
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #444;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
-    color: white;
-    max-width: 75%;
+.inner-box:hover {
+    transform: scale(1.05);
+}
+
+.inner-box i {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #00aced;
+}
+
+.inner-box a {
+    color: #ffffff; /* Set the link color to white */
+    text-decoration: none; /* Remove underline from links */
 }
 
 #projects .project-grid {
@@ -129,11 +164,3 @@ h1, h2 {
         grid-template-columns: 1fr;
     }
 }
-
-/* footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #666;
-    color: white;
-    border-top: 1px solid #f0f0f0;
-} */
